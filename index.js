@@ -5,10 +5,7 @@ var uuid = require('node-uuid');
 
 var server = null;
 var clients = {};
-//var server_name = 'chat.onecallapi.com';
 var server_name = '208.103.144.163';
-var server_replace = new RegExp('/@' + server_name + '/g');
-var client_replace = new RegExp('/@sms\.gdn/g');
 
 function startServer(done) {
 	done = done || function () {};
